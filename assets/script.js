@@ -6,10 +6,7 @@ function dateTime () {
     $("#currentDay").text(timeNow);
     return timeNow;
 }
-
-
     setInterval(dateTime, 1000);
-
 
 var timeBlockData = [
     {
@@ -95,7 +92,6 @@ var saveBtn;
 var saveBtnEl;
 var userInput;
 
-
 timeBlockData.forEach(function(timeBlockEl, index) {
 
     var rowEl = $("<form>")
@@ -126,7 +122,25 @@ timeBlockData.forEach(function(timeBlockEl, index) {
         descriptionEl.addClass("future");
     }
 
+    var storePlan = (localStorage.getItem("index"));
+    console.log(storePlan);
+    descriptionText.val(storePlan);
 
+    saveBtnEl = $("<i class='far fa-save fa-lg'></i>");
+    saveBtn = $("<button>")
+            saveBtn.addClass("col-2 col-md-1 saveBtn");
+            saveBtn.append(saveBtnEl);
 
-    
+        saveBtn.on("click", function(e){
+            e.preventDefault();
+            userInput = document.getElementById(index);
+            console.log(userInput);
+            console.log(userInput.value);
+            localStorage.setItem(index, userInput.value);
+
+            return userInput;
+        });
+
+    rowEl.append(hourEl, descriptionEl, saveBtn);
+
 });
