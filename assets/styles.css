@@ -39,45 +39,67 @@ textarea {
 }
 
 .container {
-
+    margin-bottom: 20px;
 }
 
 #currentDay {
-
+    margin-top: 52px;
 }
 
 .description {
-
+  white-space: pre-wrap;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .time-block{
-
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: var(--boxShadow);
 }
 
 .row {
-
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;
+    margin-bottom: 10px;
+    border-radius: 15px;
 }
 
 .hour {
-
+    background-color: #ffffff5e;
+    color: #000000;
+    border-right: 0px;
+    border-top-left-radius: 12px;
+    box-shadow: var(--boxShadow);
+    border-bottom-left-radius: 12px;
 }
 
 .past {
-
+    background-color: var(--past);
+    color: white;
 }
 
 .present {
-
+    background-color: var(--present);
+    color: white;
 }
 
 .future {
-
+    background-color: var(--future);
+    color: white;
 }
 
 .saveBtn {
-
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: var(--saveBtn);
+    color: white;
+    box-shadow: var(--boxShadow);
 }
 
 .saveBtn i:hover {
-
+    font-size: 27px;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--saveBtnHover);
 }
