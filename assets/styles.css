@@ -1,0 +1,73 @@
+:root {
+    --past: #8F8F8F;
+    --present: #afd1c7;
+    --saveBtn: #CBA135;
+    --primary: #545F66;
+    --future: #d3d3d3;
+    --saveBtnHover: #826621;
+    --boxShadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+body {
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 16px;
+  line-height: 1;
+  background-color: #c9c9c969;
+}
+
+textarea {
+
+}
+
+.jumbotron {
+
+}
+
+#motto {
+
+}
+
+.container {
+
+}
+
+#currentDay {
+
+}
+
+.description {
+
+}
+
+.time-block{
+
+}
+
+.row {
+
+}
+
+.hour {
+
+}
+
+.past {
+
+}
+
+.present {
+
+}
+
+.future {
+
+}
+
+.saveBtn {
+
+}
+
+.saveBtn i:hover {
+
+}
